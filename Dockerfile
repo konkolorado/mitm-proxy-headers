@@ -1,7 +1,8 @@
 FROM python:3.13-alpine
 
-ENV PATH="/home/.local/bin:${PATH}"
+ENV PATH="/root/.local/bin:${PATH}"
 
+RUN apk add --no-cache gcc libffi-dev musl-dev curl
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR /app
