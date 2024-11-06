@@ -1,4 +1,4 @@
-FROM python3:3.13-alpine
+FROM python:3.13-alpine
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
