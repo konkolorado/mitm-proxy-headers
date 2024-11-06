@@ -1,5 +1,7 @@
 FROM python:3.13-alpine
 
+ENV POETRY_HOME='/usr/local'
+
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
 WORKDIR /app
