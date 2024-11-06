@@ -1,6 +1,6 @@
 FROM python:3.13-alpine
 
-ENV POETRY_HOME='/usr/local'
+ENV PATH="/home/.local/bin:${PATH}"
 
 RUN curl -sSL https://install.python-poetry.org | python3 -
 
