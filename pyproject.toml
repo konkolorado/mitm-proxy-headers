@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "mitm-proxy-headers"
+version = "0.1.0"
+description = ""
+authors = ["Uriel Mandujano <5422638+konkolorado@users.noreply.github.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mitmproxy = "^11.0.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
